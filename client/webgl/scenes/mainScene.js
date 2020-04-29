@@ -574,7 +574,7 @@ function initMainScene(gl, ext, socket, playerId, playersAtConnect) {
             tank.localRotation = quatFromEuler(Vector3.zero)
             tank.setVelocity(Vector3.zero)
             tank.body.angularVelocity = new CANNON.Vec3(0, 0, 0)
-            let radius = 140
+            let radius = stormRadius
             let r = Math.random() * radius * radius
             let theta = Math.random() * 2 * Math.PI
             let position = new Vector3(Math.sqrt(r) * Math.cos(theta) + stormRadius, 100, Math.sqrt(r) * Math.sin(theta) + stormRadius)
@@ -616,8 +616,10 @@ function initMainScene(gl, ext, socket, playerId, playersAtConnect) {
                     //console.log(players[data].tank)
                     //players[data].tank.children[0].enabled = false
                     //Destroy(players[data].tank)
-                    Destroy(players[data].tank)
-                    players[data].tank = null
+                    if (palyers[data].tank != null) {
+                        Destroy(players[data].tank)
+                        players[data].tank = null
+                    }
                 }
             }
             else {
