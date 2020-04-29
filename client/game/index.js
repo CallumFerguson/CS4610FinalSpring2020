@@ -119,7 +119,7 @@ $(() => {
 function start(gl, ext) {
     const Mode = Object.freeze({ singlePlayer: 0, multiplayerLocal: 1, multiplayer: 2 })
 
-    let mode = Mode.multiplayer
+    let mode = Mode.singlePlayer
 
     if (mode == Mode.singlePlayer) {
         main(null, null, null, gl, ext)
