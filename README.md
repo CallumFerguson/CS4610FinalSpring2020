@@ -24,4 +24,4 @@ node server.js
 
 The client website has an endpoint "gameControlPanel" for starting and resetting the match. The default password is "27". For the control panel to connect to the server, the ip and game mode must also be changed. You can find that in client/gameControlPanel/index.js
 
-Remember to change the ip and game mode of the client so it can connect to the server.
+Remember to also change the ip and game mode of the client so it can connect to the server.
