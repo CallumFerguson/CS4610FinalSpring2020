@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WebGL</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Game Control Panel</h1>
+        <div>Password:</div>
+        <input type="text" id="password">
+        <button type="button" onclick="getNumPlayers()">Get # players</button>
+        <button type="button" onclick="startGame()">Start</button>
+        <button type="button" onclick="resetGame()">Reset</button>
+    </body>
+</html>
