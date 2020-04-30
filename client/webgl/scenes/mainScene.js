@@ -574,7 +574,7 @@ function initMainScene(gl, ext, socket, playerId, playersAtConnect) {
             tank.localRotation = quatFromEuler(Vector3.zero)
             tank.setVelocity(Vector3.zero)
             tank.body.angularVelocity = new CANNON.Vec3(0, 0, 0)
-            let radius = stormRadius
+            let radius = stormRadius - 10
             let r = Math.random() * radius * radius
             let theta = Math.random() * 2 * Math.PI
             let position = new Vector3(Math.sqrt(r) * Math.cos(theta) + stormRadius, 100, Math.sqrt(r) * Math.sin(theta) + stormRadius)
