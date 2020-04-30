@@ -110,7 +110,7 @@ function initMainScene(gl, ext, socket, playerId, playersAtConnect) {
     storm.script.update = (gameObject, state) => {
         if (gameStarted) {
             let matchTime = state.time - gameStartTime
-            let progress = 1 - matchTime / (60 * 3)
+            let progress = 1 - matchTime / (60 * 2)
             if (progress < 0)
                 progress = 0
             safeRadius = stormRadius * progress
