@@ -4,6 +4,8 @@ Mizzou CS4610 final project built with custom WebGL engine with Cannon.js physic
 
 ![Screen Shot](screen_shot.png "Screen Shot")
 
+Demo: https://youtu.be/qxom37T8zKA
+
 # Instructions
 
 ## Client
